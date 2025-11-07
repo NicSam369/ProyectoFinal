@@ -6,7 +6,8 @@ class Cuenta
 {
 	public:
 	    Cuenta();
-		Cuenta(int numCuenta[20])
+		Cuenta(int numCuenta[20]);
+	    Cuenta(double saldo);
 	private:
         int numCuenta[20];
 		int idUsuario;
