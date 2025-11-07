@@ -16,3 +16,20 @@
 1762486467 d:\code\github\usuario\include\usuario.h
 	"String_.h"
 
+1762520242 source:d:\ccomp2-2\proyectofinal\clases\main.cpp
+	<iostream>
+	"Usuario.h"
+
+1762520024 d:\ccomp2-2\proyectofinal\clases\include\usuario.h
+	"String_.h"
+
+1762519232 d:\ccomp2-2\proyectofinal\clases\include\string_.h
+
+1762519292 source:d:\ccomp2-2\proyectofinal\clases\src\string_.cpp
+	"String_.h"
+	<iostream>
+
+1762520280 source:d:\ccomp2-2\proyectofinal\clases\src\usuario.cpp
+	"Usuario.h"
+	<iostream>
+

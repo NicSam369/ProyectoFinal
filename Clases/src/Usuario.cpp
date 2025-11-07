@@ -9,24 +9,24 @@ Usuario::Usuario()
     id =0;
 }
 
-Usuario::Usuario(char DNIpas[8])//, char nom[], char pasw[])
+Usuario::Usuario(char DNIpas[8], String_ name, String_ contra)
 {
     for(int i=0; i<8; i++){
         DNI[i]=DNIpas[i];
     }
     id =0;
-    //nombre= nom; ERROR
-    //pasword= pasw; ERROR
+    nombre.CopiarString(name);
+    pasword.CopiarString(contra);
 }
 
 void Usuario::print()
 {
     std::cout << std::endl;
     std::cout<< "Informacion del Usuario:" << std::endl;
-    //std::cout << "Nombre: " << nombre.getstring() << std::endl;
+    std::cout << "Nombre: " << nombre.str_ << std::endl;
     std::cout << "DNI: " << DNI << std::endl;
     std::cout << "ID: " << id << std::endl;
-    //std::cout << "pasword: " << pasword.getstring() << std::endl;
+    std::cout << "pasword: " << pasword.str_ << std::endl;
     std::cout << std::endl;
 }
 
@@ -36,12 +36,12 @@ int Usuario::getID()
 }
 
 char* Usuario::getpasword(){
-//    return pasword.getstring();
+    return pasword.str_;
 }
 
 char* Usuario::getName()
 {
-//    return nombre.getstring();
+    return nombre.str_;
 }
 
 char* Usuario::getDNI()

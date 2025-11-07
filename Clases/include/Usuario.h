@@ -6,7 +6,7 @@ class Usuario
 {
     public:
         Usuario();
-        Usuario(char DNIpas[8]);//, char nom[], char pasw[]);
+        Usuario(char DNIpas[8],String_ name, String_ contra);
         void print();
         int getID();
         char* getName();
@@ -18,9 +18,9 @@ class Usuario
 
     private:
         char DNI[8];
-        String_* nombre;
+        String_ nombre;
         int id;
-        String_* pasword;
+        String_ pasword;
 };
 
 #endif // USUARIO_H

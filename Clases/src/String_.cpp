@@ -23,15 +23,17 @@ String_::String_(char arr[])
 
 String_::String_ (const String_ &o)
 {
-    sizestr=o.getsize();
+    sizestr=o.sizestr;
     str_= new char[sizestr];
     for(int i =0; i < sizestr;i++){
         str_[i]=o.str_[i];
     }
 }
 
-
-
+void String_::CopiarString(const String_ &n){
+    str_=n.str_;
+    sizestr=n.sizestr;
+}
 
 void String_::sizewords(){
     std::cout << sizestr-1 << std::endl;
@@ -42,7 +44,7 @@ void String_:: ChangeChar(char n, int idx){
         str_[idx]=n;
     }
 }
-
+/**
 int String_::getsize() const{
     return sizestr;
 }
@@ -51,7 +53,7 @@ char* String_::getstring() const{
     return str_;
 }
 
-
+*/
 
 String_::~String_()
 {

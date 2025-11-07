@@ -5,18 +5,21 @@
 class String_
 {
     public:
+
+        int sizestr;
+        char *str_;
+
         String_();
         String_(char arr[]);
         String_(const String_ &o);
         void sizewords();
-        int getsize() const;
+        void CopiarString(const String_ &n);
+        //int getsize() const;
         void ChangeChar(char n, int idx);
-        char* getstring() const;
+        //char* getstring() const;
+
         ~String_();
 
-    private:
-        int sizestr;
-        char *str_;
 };
 
 #endif // STRING__H
