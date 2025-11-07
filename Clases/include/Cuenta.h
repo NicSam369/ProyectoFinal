@@ -5,13 +5,16 @@
 class Cuenta
 {
 	public:
-	    Cuenta();
-		Cuenta(int numCuenta[20]);
-	    Cuenta(double saldo);
+	     Cuenta();
+		 Cuenta(int numCuenta[20])
+		 void print();
+		 Cuenta(double saldo);
+		 
+		 
 	private:
-        int numCuenta[20];
-		int idUsuario;
-		double saldo;
+         int numCuenta[20];
+		 int idUsuario;
+		 double saldo;
 
 }
  #endif // CUENTA.H
