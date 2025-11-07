@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1762486476 source:d:\code\github\usuario\main.cpp
+	<iostream>
+	"Usuario.h"
+
+1762486037 source:d:\code\github\usuario\src\string_.cpp
+	"String_.h"
+	<iostream>
+
+1762484043 d:\code\github\usuario\include\string_.h
+
+1762484804 source:d:\code\github\usuario\src\usuario.cpp
+	"Usuario.h"
+	<iostream>
+
+1762486467 d:\code\github\usuario\include\usuario.h
+	"String_.h"
+
