@@ -15,8 +15,8 @@ Usuario::Usuario(char DNIpas[8], String_ name, String_ contra)
         DNI[i]=DNIpas[i];
     }
     id =0;
-    nombre.CopiarString(name);
-    pasword.CopiarString(contra);
+    nombre= name;
+    pasword= contra;
 }
 
 void Usuario::print()

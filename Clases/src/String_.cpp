@@ -29,10 +29,20 @@ String_::String_ (const String_ &o)
         str_[i]=o.str_[i];
     }
 }
+String_&::String_ operator=(const String_ &o)
+{
+    if(this* -> str_){
+        this ->sizestr= o.sizestr;
+        this->str_= new int[sizestr];
+        for(int i=0; i< sizestr; i++){
+        this ->str_[i]= o.str_[i];
+    }
+    }else {
 
-void String_::CopiarString(const String_ &n){
-    str_=n.str_;
-    sizestr=n.sizestr;
+    }
+
+    return *this;
+
 }
 
 void String_::sizewords(){
@@ -52,6 +62,11 @@ int String_::getsize() const{
 char* String_::getstring() const{
     return str_;
 }
+void String_::CopiarString(const String_ &n){
+    str_=n.str_;
+    sizestr=n.sizestr;
+}
+
 
 */
 

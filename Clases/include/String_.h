@@ -13,7 +13,8 @@ class String_
         String_(char arr[]);
         String_(const String_ &o);
         void sizewords();
-        void CopiarString(const String_ &n);
+        String_& operator=(const String_ &o)
+        //void CopiarString(const String_ &n);
         //int getsize() const;
         void ChangeChar(char n, int idx);
         //char* getstring() const;
