@@ -29,24 +29,24 @@ String_::String_ (const String_ &o)
         str_[i]=o.str_[i];
     }
 }
-String_&::String_ operator=(const String_ &o)
+const String_& String_ ::operator=(const String_ &o)
 {
-    if(this* -> str_){
-        this ->sizestr= o.sizestr;
-        this->str_= new int[sizestr];
-        for(int i=0; i< sizestr; i++){
+    if( &o != this){
+        if(this -> sizestr != o.sizestr){
+            delete [] str_;
+            this ->sizestr= o.sizestr;
+            str_ = new char[this->sizestr];
+        }
+        for(int i=0; i< this -> sizestr; i++){
         this ->str_[i]= o.str_[i];
+        }
+        str_[sizestr - 1] = '\0';
     }
-    }else {
-
-    }
-
     return *this;
-
 }
 
-void String_::sizewords(){
-    std::cout << sizestr-1 << std::endl;
+void String_:: sizewords() {
+    //std::cout << sizestr-1 << std::endl;
 }
 
 void String_:: ChangeChar(char n, int idx){
@@ -54,21 +54,6 @@ void String_:: ChangeChar(char n, int idx){
         str_[idx]=n;
     }
 }
-/**
-int String_::getsize() const{
-    return sizestr;
-}
-
-char* String_::getstring() const{
-    return str_;
-}
-void String_::CopiarString(const String_ &n){
-    str_=n.str_;
-    sizestr=n.sizestr;
-}
-
-
-*/
 
 String_::~String_()
 {
