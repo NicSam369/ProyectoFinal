@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Usuario.h"
+#include "Cuenta.h"
 using namespace std;
 
 int main()
@@ -14,6 +15,13 @@ int main()
     num1.print();
     num1.CambiarPasword("djdjdjd");
     num1.print();
+    char numcuenta[20]= {'0','0','0','0','0','0','0','0','0','0',
+                        '0','0','0','0','0','0','0','0','0','0'};
+    Cuenta c1(numcuenta, 43,100.60);
+
+
+
+/**
     //cout << num1.getName();
     //cout<<endl;
     //cout << num1.getDNI();
@@ -23,7 +31,6 @@ int main()
     //cout<< num1.getID();
     //cout << num1.getName();
     //num1.print();
-/**
     String_ s("VIVc");
     cout<< s.str_;
     String_ S;

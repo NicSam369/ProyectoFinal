@@ -1,11 +1,11 @@
 #include "Cuenta.h"
 #include <iostream>
 
-Cuenta::Cuenta(char numCuenta_ [20],int idUsuario, double saldoInicial)
+Cuenta::Cuenta(char numCuenta_[20],int idUsuario, double saldoInicial)
 {
     for(int i = 0; i<20; i++)
     {
-        numCuenta[i] = numCuenta_ [i];
+        numCuenta[i] = numCuenta_[i];
     }
     id = idUsuario;
     saldo = saldoInicial;
