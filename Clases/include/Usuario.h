@@ -12,7 +12,7 @@ class Usuario
         char* getName();
         char* getDNI();
         char* getpasword();
-        void CambiarPasword(char *NuevoPasword);
+        void CambiarPasword(char NuevoPasword[]);
         bool VerificarPasword(String_ nuevopasword);
         ~Usuario();
 

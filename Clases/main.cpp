@@ -11,6 +11,9 @@ int main()
     String_ contra1(arr1);
     char dni[8]={'1','2','3','4','5','6','7','8'};
     Usuario num1(dni,n1,contra1);
+    num1.print();
+    num1.CambiarPasword("djdjdjd");
+    num1.print();
     //cout << num1.getName();
     //cout<<endl;
     //cout << num1.getDNI();
@@ -19,7 +22,7 @@ int main()
     //cout<<endl;
     //cout<< num1.getID();
     //cout << num1.getName();
-    num1.print();
+    //num1.print();
 /**
     String_ s("VIVc");
     cout<< s.str_;

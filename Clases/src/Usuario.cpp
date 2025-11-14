@@ -49,26 +49,22 @@ char* Usuario::getDNI()
     return DNI;
 }
 
-void Usuario::CambiarPasword(char *NuevoPasword)
+void Usuario::CambiarPasword(char NuevoPasword[])
 {
-
+    pasword=NuevoPasword;
 }
 
 bool Usuario::VerificarPasword(String_ nuevopasword)
 {
-    bool verifica=true;
-//    for(int i=0; i< pasword.getsize() ; i++){
-//        if(pasword.getstring()[i]== nuevopasword.getstring()[i]){
-//            verifica=true;
-//        }
-//        else{
-//            verifica = false;
-//            break;
-//        }
-//    }
-    return verifica;
+    //agregar en string el operator==
+        //if(pasword== nuevopasword){
+        //    return true;
+        //}
+        //else{
+          //  return false;
+//}
+    return true;
 }
-
 Usuario::~Usuario()
 {
 
