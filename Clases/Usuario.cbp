@@ -34,9 +34,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/GestorDeArchivos.h" />
 		<Unit filename="include/String_.h" />
 		<Unit filename="include/Usuario.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/GestorDeArchivos.cpp" />
 		<Unit filename="src/String_.cpp" />
 		<Unit filename="src/Usuario.cpp" />
 		<Extensions>

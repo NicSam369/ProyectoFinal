@@ -16,21 +16,21 @@
 1762486467 d:\code\github\usuario\include\usuario.h
 	"String_.h"
 
-1763123145 source:d:\ccomp2-2\proyectofinal\clases\main.cpp
+1763126005 source:d:\ccomp2-2\proyectofinal\clases\main.cpp
 	<iostream>
 	"Usuario.h"
 	"Cuenta.h"
 
-1763122811 d:\ccomp2-2\proyectofinal\clases\include\usuario.h
+1763124306 d:\ccomp2-2\proyectofinal\clases\include\usuario.h
 	"String_.h"
 
-1763122811 d:\ccomp2-2\proyectofinal\clases\include\string_.h
+1763124306 d:\ccomp2-2\proyectofinal\clases\include\string_.h
 
-1763122811 source:d:\ccomp2-2\proyectofinal\clases\src\string_.cpp
+1763124306 source:d:\ccomp2-2\proyectofinal\clases\src\string_.cpp
 	"String_.h"
 	<iostream>
 
-1763122811 source:d:\ccomp2-2\proyectofinal\clases\src\usuario.cpp
+1763124306 source:d:\ccomp2-2\proyectofinal\clases\src\usuario.cpp
 	"Usuario.h"
 	<iostream>
 
@@ -51,6 +51,13 @@
 	"String_.h"
 	<iostream>
 
-1763123351 d:\ccomp2-2\proyectofinal\clases\include\cuenta.h
+1763124306 d:\ccomp2-2\proyectofinal\clases\include\cuenta.h
 	"String_.h"
+
+1763126390 source:d:\ccomp2-2\proyectofinal\clases\src\gestordearchivos.cpp
+	"GestorDeArchivos.h"
+	<iostream>
+
+1763126350 d:\ccomp2-2\proyectofinal\clases\include\gestordearchivos.h
+	"Usuario.h"
 

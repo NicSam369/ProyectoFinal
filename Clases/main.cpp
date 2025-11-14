@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Usuario.h"
 #include "Cuenta.h"
+#include "GestorDeArchivos.h"
+
 using namespace std;
 
 int main()
@@ -17,8 +19,11 @@ int main()
     num1.print();
     char numcuenta[20]= {'0','0','0','0','0','0','0','0','0','0',
                         '0','0','0','0','0','0','0','0','0','0'};
-    Cuenta c1(numcuenta, 43,100.60);
-
+    //Cuenta c1(numcuenta, 43,100.60);
+    cout << "GESTOR DE ARCHIVOS: " <<endl;
+    GestorDeArchivos gest1;
+    gest1.AgregarUsuario(num1);
+    gest1.printUsuarios();
 
 
 /**
