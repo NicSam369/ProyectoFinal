@@ -37,10 +37,16 @@
 		<Unit filename="include/GestorDeArchivos.h" />
 		<Unit filename="include/String_.h" />
 		<Unit filename="include/Usuario.h" />
+		<Unit filename="include/UsuarioNormal.h" />
+		<Unit filename="include/UsuarioPreferencial.h" />
+		<Unit filename="include/UsuarioPremium.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/GestorDeArchivos.cpp" />
 		<Unit filename="src/String_.cpp" />
 		<Unit filename="src/Usuario.cpp" />
+		<Unit filename="src/UsuarioNormal.cpp" />
+		<Unit filename="src/UsuarioPreferencial.cpp" />
+		<Unit filename="src/UsuarioPremium.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

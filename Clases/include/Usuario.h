@@ -1,26 +1,45 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 #include "String_.h"
+//recordatorio de poner const
 
 class Usuario
 {
     public:
         Usuario();
-        Usuario(char DNIpas[8],String_ name, String_ contra);
+        Usuario(char DNIpas[9],String_ name, String_ contra, String_ email);
+
         void print();
+
         int getID();
-        char* getName();
-        char* getDNI();
-        char* getpasword();
+        char* getName()const;
+        char* getDNI() ;
+        char* getpasword() const;
+        int getTipo();
+        char* getCorreo() const;
+        int GetNumeroCuentas();
+
+        void setDNI(char arr[9]);
+        void setnombre(const String_& name);
+        void setPasword(const String_& contra);
+        void setCorreo(const String_& email);
+        void setid(int inid);
+        void setType(int type);
+        void setCuentas(int cantidadCuentas);
+
         void CambiarPasword(char NuevoPasword[]);
+        void CambiarCorreo(char NuevoCorreo[]);
         bool VerificarPasword(String_ nuevopasword);
         ~Usuario();
 
-    private:
-        char DNI[8];
+    protected:
+        char DNI[9];
         String_ nombre;
         int id;
         String_ pasword;
+        int tipo;
+        String_ correo;
+        int NumeroCuentas;
 };
 
 #endif // USUARIO_H

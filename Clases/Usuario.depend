@@ -34,20 +34,22 @@
 	"Usuario.h"
 	<iostream>
 
-1763080154 source:d:\code\github\proyectofinal\clases\main.cpp
+1763521994 source:d:\code\github\proyectofinal\clases\main.cpp
 	<iostream>
 	"Usuario.h"
+	"Cuenta.h"
+	"GestorDeArchivos.h"
 
-1763079909 d:\code\github\proyectofinal\clases\include\usuario.h
+1763522894 d:\code\github\proyectofinal\clases\include\usuario.h
 	"String_.h"
 
-1763078403 d:\code\github\proyectofinal\clases\include\string_.h
+1763520439 d:\code\github\proyectofinal\clases\include\string_.h
 
-1763080725 source:d:\code\github\proyectofinal\clases\src\usuario.cpp
+1763522894 source:d:\code\github\proyectofinal\clases\src\usuario.cpp
 	"Usuario.h"
 	<iostream>
 
-1763079015 source:d:\code\github\proyectofinal\clases\src\string_.cpp
+1763520439 source:d:\code\github\proyectofinal\clases\src\string_.cpp
 	"String_.h"
 	<iostream>
 
@@ -59,5 +61,33 @@
 	<iostream>
 
 1763126350 d:\ccomp2-2\proyectofinal\clases\include\gestordearchivos.h
+	"Usuario.h"
+
+1763436542 d:\code\github\proyectofinal\clases\include\cuenta.h
+	"String_.h"
+
+1763436542 d:\code\github\proyectofinal\clases\include\gestordearchivos.h
+	"Usuario.h"
+
+1763436542 source:d:\code\github\proyectofinal\clases\src\gestordearchivos.cpp
+	"GestorDeArchivos.h"
+	<iostream>
+
+1763522925 source:d:\code\github\proyectofinal\clases\src\usuariopremium.cpp
+	"UsuarioPremium.h"
+
+1763523036 d:\code\github\proyectofinal\clases\include\usuariopremium.h
+	"Usuario.h"
+
+1763523036 source:d:\code\github\proyectofinal\clases\src\usuarionormal.cpp
+	"UsuarioNormal.h"
+
+1763523070 d:\code\github\proyectofinal\clases\include\usuarionormal.h
+	"Usuario.h"
+
+1763523150 source:d:\code\github\proyectofinal\clases\src\usuariopreferencial.cpp
+	"UsuarioPreferencial.h"
+
+1763523150 d:\code\github\proyectofinal\clases\include\usuariopreferencial.h
 	"Usuario.h"
 

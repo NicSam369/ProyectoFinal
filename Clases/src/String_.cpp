@@ -40,11 +40,33 @@ const String_& String_ ::operator=(const String_ &o)
         for(int i=0; i< this -> sizestr; i++){
         this ->str_[i]= o.str_[i];
         }
-        str_[sizestr - 1] = '\0';
     }
     return *this;
 }
 
+bool String_ ::operator==(const String_ &o)
+{
+
+    if(this-> sizestr == o.sizestr){
+        for(int i=0; i< this -> sizestr; i++){
+            if(str_[i] != o.str_[i]){
+                return false;
+            }
+        }
+        return true;
+    } else {
+        return false;
+    }
+}
+bool String_ ::operator==(char* o)
+{
+    for(int i=0; i< this -> sizestr; i++){
+            if(str_[i] != o[i]){
+                return false;
+            }
+    }
+    return true;
+}
 void String_:: sizewords() {
     //std::cout << sizestr-1 << std::endl;
 }

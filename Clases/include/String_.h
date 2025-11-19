@@ -14,10 +14,9 @@ class String_
         String_(const String_ &o);
         void sizewords();
         const String_& operator=(const String_ &o);
-        //void CopiarString(const String_ &n);
-        //int getsize() const;
+        bool operator==(const String_ &o);
+        bool operator==(char* o);
         void ChangeChar(char n, int idx);
-        //char* getstring() const;
 
         ~String_();
 
