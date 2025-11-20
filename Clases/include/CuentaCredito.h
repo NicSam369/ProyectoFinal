@@ -1,5 +1,5 @@
-#ifndef CUENTA_CREDITO_H
-#define CUENTA_CREDITO_H
+#ifndef CUENTACREDITO_H
+#define CUENTACREDITO_H
 #include "Cuenta.h"
 
 class CuentaCredito : public Cuenta 
