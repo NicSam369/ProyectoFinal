@@ -1,6 +1,6 @@
 #ifndef CUENTA_CREDITO_H
 #define CUENTA_CREDITO_H
-#include "Cuenta_h"
+#include "Cuenta.h"
 
 class CuentaCredito : public Cuenta 
 {
