@@ -7,4 +7,4 @@ class CuentaCredito : public Cuenta
 
 }
 
-#endif
+#endif // CUENTA_CREDITO_H
