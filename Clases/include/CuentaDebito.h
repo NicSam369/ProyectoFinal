@@ -1,5 +1,5 @@
-#ifndef CUENTA_DEBITO_H
-#define CUENTA_DEBITO_H
+#ifndef CUENTADEBITO_H
+#define CUENTADEBITO_H
 #include "Cuenta.h"
 
 class CuentaDebito : public Cuenta 
@@ -10,4 +10,4 @@ class CuentaDebito : public Cuenta
          void mostrarDatos() const override;
 };
 
-#endif
+#endif //CUENTADEBITO_H
