@@ -2,4 +2,7 @@
 #define CUENTAAHORRO_H
 #include "Cuenta.h"
 
-class CuentaAhorro :
+class CuentaAhorro : public Cuenta
+{
+
+}
