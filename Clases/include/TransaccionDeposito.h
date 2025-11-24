@@ -4,20 +4,35 @@
 #include "String_.h"
 #include <iostream>
 
-using namespace std;
+class TransaccionDeposito : public Transaccion
+{
+protected:
+    String_ tipoDeposito;
+    String_ depositante;
 
-class TransaccionDeposito: public Transaccion {
-	protected:
-        String_ tipoDeposito;
-        String_ depositante;
-    public:
-        TransaccionDeposito();
-		TransaccionDeposito(int tipo, double monto, int idUsuario, char numCuenta[20], String_ tipoDeposito, String_ depositante)
+public:
+    TransaccionDeposito(); 
 
-		void mostrar() const override;
+    TransaccionDeposito(int tipo, double monto, int idUsuario,
+                        const char numCuenta[20],
+                        String_ tipoDeposito, String_ depositante)
+        : Transaccion(tipo, monto, idUsuario, numCuenta)
+    {
+        this->tipoDeposito = tipoDeposito;
+        this->depositante = depositante;
+    }
 
-		~TransaccionDeposito();
+    virtual void mostrar() const override {
+        Transaccion::mostrar();
+        cout << "Tipo de deposito: "; tipoDeposito.print();
+        cout << "Depositante: "; depositante.print();
+        cout << endl;
+    }
+
+    virtual ~TransaccionDeposito();
 };
 
 #endif
+
+
 
