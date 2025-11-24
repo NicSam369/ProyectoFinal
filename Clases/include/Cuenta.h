@@ -17,6 +17,10 @@ class Cuenta
          char numCuenta[20];
 		 int id;
 		 double saldo;
+		 double Interes;
+
+
 
 };
  #endif // CUENTA.H
+
