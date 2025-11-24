@@ -40,6 +40,16 @@ int main()
     CB.agregarUsuario(num1);
     CB.mostrarUsuarios();
 
+    char numCuenta[20] = "00011122233";
+
+    TransaccionDeposito dep(1, 200.0, 1, numCuenta, "Efectivo", "Vivian");
+    cout << " DEPOSITO " << endl;
+    dep.mostrarDeposito();
+
+    TransaccionRetiro ret(2, 50.0, 1, numCuenta, "Cajero Automático");
+    cout << " RETIRO " << endl;
+    ret.mostrarRetiro();
+
 
 /**
     String_ numeroBanco = "123222";
@@ -75,4 +85,5 @@ int main()
     */
     return 0;
 }
+
 
