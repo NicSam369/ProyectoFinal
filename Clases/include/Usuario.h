@@ -7,7 +7,7 @@ class Usuario
 {
     public:
         Usuario();
-        Usuario(char DNIpas[9],String_ name, String_ contra, String_ email);
+        Usuario(const char *DNIpas,String_ name, String_ contra, String_ email);
 
         void print();
 
@@ -19,7 +19,7 @@ class Usuario
         char* getCorreo() const;
         int GetNumeroCuentas();
 
-        void setDNI(char arr[9]);
+        void setDNI(const char *arr);
         void setnombre(const String_& name);
         void setPasword(const String_& contra);
         void setCorreo(const String_& email);

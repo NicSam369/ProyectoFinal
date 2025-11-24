@@ -5,17 +5,15 @@
 class CuentaCredito : public Cuenta
 {
     public:
-       CuentaCredito(char numCuenta_[20], int idUsuario, double saldoInicial, double deudaActual, double Interes);
+       CuentaCredito();
+       CuentaCredito(char numCuenta_[20], int idUsuario, double saldoInicial, double limtite);
 
        bool retirar(double monto) override;
        void mostrarDatos() const override;
-       void aplicarInteres();
 
+       ~CuentaCredito();
     protected:
-        double deuda(); //DEUDA ACTUAL
-
-   //   double limiteCredito; //con lo que nos de el banco dependiendo a la cuenta
-
+       double limiteCredito; //con lo que nos de el banco dependiendo a la cuenta
 };
 
 #endif // CUENTA_CREDITO_H

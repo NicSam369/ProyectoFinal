@@ -1,6 +1,6 @@
 #include "UsuarioNormal.h"
 
-UsuarioNormal::UsuarioNormal(char DNIpas[9],String_ name, String_ contra, String_ email)
+UsuarioNormal::UsuarioNormal(const char *DNIpas,String_ name, String_ contra, String_ email)
 {
     setDNI(DNIpas);
     setnombre(name);
@@ -8,6 +8,7 @@ UsuarioNormal::UsuarioNormal(char DNIpas[9],String_ name, String_ contra, String
     setCorreo(email);
     setType(0);
 }
+
 
 UsuarioNormal::~UsuarioNormal()
 {

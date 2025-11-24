@@ -1,6 +1,6 @@
 #include "UsuarioPreferencial.h"
 
-UsuarioPreferencial::UsuarioPreferencial(char DNIpas[9],String_ name, String_ contra, String_ email)
+UsuarioPreferencial::UsuarioPreferencial(const char *DNIpas,String_ name, String_ contra, String_ email)
 {
     setDNI(DNIpas);
     setnombre(name);

@@ -10,13 +10,15 @@ class String_
         char *str_;
 
         String_();
-        String_(char arr[]);
+        String_(char n);
+        String_(const char arr[]);
         String_(const String_ &o);
         void sizewords();
         const String_& operator=(const String_ &o);
         bool operator==(const String_ &o);
-        bool operator==(char* o);
+        bool operator==(const char* o);
         void ChangeChar(char n, int idx);
+        void print() const;
 
         ~String_();
 

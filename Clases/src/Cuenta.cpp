@@ -1,6 +1,11 @@
 #include "Cuenta.h"
 #include <iostream>
 
+Cuenta::Cuenta()
+{
+
+}
+
 Cuenta::Cuenta(char numCuenta_[20],int idUsuario, double saldoInicial)
 {
     for(int i = 0; i<20; i++)
@@ -32,14 +37,14 @@ bool Cuenta::retirar(double monto)
     if (monto > saldo)
     {
         std::cout << "Saldo insuficiente" << std::endl;
-        return false
+        return false;
     }
 
     saldo = saldo - monto;
     return true;
 }
 
-void Cuenta::mostrarDatos()
+void Cuenta::mostrarDatos() const
 {
     std::cout<<"El numero de cuenta es: ";
     for(int i = 0; i<20; i++)
@@ -50,7 +55,22 @@ void Cuenta::mostrarDatos()
     std::cout<<"El saldo actual es: " << saldo << std::endl;
 }
 
+void Cuenta::setType(int type){
+    if(type == 0){
+        tipo=1;
+    } else if(type==1){
+        tipo=2;
+    } else {
+        tipo=3;
+    }
+
+}
+
 double Cuenta::getSaldo()
 {
     return saldo;
+}
+Cuenta::~Cuenta()
+{
+
 }

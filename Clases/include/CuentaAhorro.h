@@ -5,11 +5,10 @@
 class CuentaAhorro : public Cuenta
 {
     public:
-        CuentaAhorro(int numero, int idUsuario, double _interes, double _saldo);
-        void aplicarInteres();
+        CuentaAhorro();
+        bool retirar(double monto) override;
         void mostrarDatos() const override;
-
-
-
+        ~CuentaAhorro();
 };
+
 #endif // CUENTAAHORRO_H

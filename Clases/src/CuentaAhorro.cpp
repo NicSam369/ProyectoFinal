@@ -1,13 +1,17 @@
-#ifndef CUENTADEBITO_H
-#define CUENTADEBITO_H
-#include "Cuenta.h"
+#include "CuentaAhorro.h"
 
-class CuentaDebito : public Cuenta
+CuentaAhorro::CuentaAhorro()
 {
-    public:
-         CuentaDebito(char numCuenta_[20], char DNI[9], double saldoInicial);
+    //ctor
+}
+bool CuentaAhorro::retirar(double monto){
+    return true;
+}
+void CuentaAhorro::mostrarDatos() const{
 
-         void mostrarDatos() const override;
-};
+}
 
-#endif //CUENTADEBITO_H
+CuentaAhorro::~CuentaAhorro()
+{
+    //dtor
+}

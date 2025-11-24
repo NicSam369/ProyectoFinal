@@ -6,8 +6,14 @@ String_::String_()
     sizestr=0;
     str_= nullptr;
 }
-
-String_::String_(char arr[])
+String_::String_(char n)
+{
+    sizestr=2;
+    str_=new char[sizestr];
+    str_[0]=n;
+    str_[1]='\0';
+}
+String_::String_(const char arr[])
 {
     int cont=0;
     for(int i = 0; arr[i]!= '\0'; i++){
@@ -58,14 +64,25 @@ bool String_ ::operator==(const String_ &o)
         return false;
     }
 }
-bool String_ ::operator==(char* o)
+
+bool String_ ::operator==(const char* o)
 {
-    for(int i=0; i< this -> sizestr; i++){
-            if(str_[i] != o[i]){
-                return false;
+    if(o!=nullptr){
+        int len=0;
+        for(int i = 0; o[i]!= '\0'; i++){
+            len++;
+        }
+        if(this-> sizestr == len+1){
+            for(int i=0; i< this -> sizestr; i++){
+                    if(str_[i] != o[i]){
+                        return false;
+                    }
             }
+            return true;
+        }
+        return false;
     }
-    return true;
+    return false;
 }
 void String_:: sizewords() {
     //std::cout << sizestr-1 << std::endl;
@@ -76,7 +93,9 @@ void String_:: ChangeChar(char n, int idx){
         str_[idx]=n;
     }
 }
-
+void String_::print() const{
+    std::cout << str_ << std::endl;
+}
 String_::~String_()
 {
     delete [] str_;

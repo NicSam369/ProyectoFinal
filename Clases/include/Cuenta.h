@@ -7,20 +7,18 @@ class Cuenta
 	public:
 	     Cuenta();
 		 Cuenta(char numCuenta_[20],int idUsuario, double saldoInicial);
-		 virtual void depositar(double monto);
+         void depositar(double monto);
 		 virtual bool retirar (double monto);
 		 virtual void mostrarDatos() const;
 		 double getSaldo();
-
+		 void setType(int type);
+         ~Cuenta();
 
 	protected:
          char numCuenta[20];
 		 int id;
 		 double saldo;
-		 double Interes;
-
-
+		 int tipo;
 
 };
  #endif // CUENTA.H
-

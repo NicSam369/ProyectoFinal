@@ -6,7 +6,7 @@
 class UsuarioPremium : public Usuario
 {
     public:
-        UsuarioPremium(char DNIpas[9],String_ name, String_ contra, String_ email);
+        UsuarioPremium(const char *DNIpas,String_ name, String_ contra, String_ email);
         ~UsuarioPremium();
 
     protected:

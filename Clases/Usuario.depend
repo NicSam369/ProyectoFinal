@@ -34,22 +34,24 @@
 	"Usuario.h"
 	<iostream>
 
-1763521994 source:d:\code\github\proyectofinal\clases\main.cpp
+1763964803 source:d:\code\github\proyectofinal\clases\main.cpp
 	<iostream>
 	"Usuario.h"
 	"Cuenta.h"
 	"GestorDeArchivos.h"
+	"CrediBanco.h"
+	"UsuarioNormal.h"
 
-1763522894 d:\code\github\proyectofinal\clases\include\usuario.h
+1763950367 d:\code\github\proyectofinal\clases\include\usuario.h
 	"String_.h"
 
-1763520439 d:\code\github\proyectofinal\clases\include\string_.h
+1763951612 d:\code\github\proyectofinal\clases\include\string_.h
 
-1763522894 source:d:\code\github\proyectofinal\clases\src\usuario.cpp
+1763951042 source:d:\code\github\proyectofinal\clases\src\usuario.cpp
 	"Usuario.h"
 	<iostream>
 
-1763520439 source:d:\code\github\proyectofinal\clases\src\string_.cpp
+1763951612 source:d:\code\github\proyectofinal\clases\src\string_.cpp
 	"String_.h"
 	<iostream>
 
@@ -63,31 +65,102 @@
 1763126350 d:\ccomp2-2\proyectofinal\clases\include\gestordearchivos.h
 	"Usuario.h"
 
-1763436542 d:\code\github\proyectofinal\clases\include\cuenta.h
+1763953731 d:\code\github\proyectofinal\clases\include\cuenta.h
 	"String_.h"
 
-1763436542 d:\code\github\proyectofinal\clases\include\gestordearchivos.h
+1763935341 d:\code\github\proyectofinal\clases\include\gestordearchivos.h
 	"Usuario.h"
 
-1763436542 source:d:\code\github\proyectofinal\clases\src\gestordearchivos.cpp
+1763935341 source:d:\code\github\proyectofinal\clases\src\gestordearchivos.cpp
 	"GestorDeArchivos.h"
 	<iostream>
 
-1763522925 source:d:\code\github\proyectofinal\clases\src\usuariopremium.cpp
+1763950333 source:d:\code\github\proyectofinal\clases\src\usuariopremium.cpp
 	"UsuarioPremium.h"
 
-1763523036 d:\code\github\proyectofinal\clases\include\usuariopremium.h
+1763950333 d:\code\github\proyectofinal\clases\include\usuariopremium.h
 	"Usuario.h"
 
-1763523036 source:d:\code\github\proyectofinal\clases\src\usuarionormal.cpp
+1763950333 source:d:\code\github\proyectofinal\clases\src\usuarionormal.cpp
 	"UsuarioNormal.h"
 
-1763523070 d:\code\github\proyectofinal\clases\include\usuarionormal.h
+1763950333 d:\code\github\proyectofinal\clases\include\usuarionormal.h
 	"Usuario.h"
 
-1763523150 source:d:\code\github\proyectofinal\clases\src\usuariopreferencial.cpp
+1763950333 source:d:\code\github\proyectofinal\clases\src\usuariopreferencial.cpp
 	"UsuarioPreferencial.h"
 
-1763523150 d:\code\github\proyectofinal\clases\include\usuariopreferencial.h
+1763950333 d:\code\github\proyectofinal\clases\include\usuariopreferencial.h
 	"Usuario.h"
+
+1763964833 d:\code\github\proyectofinal\clases\include\credibanco.h
+	"Listas.h"
+	"Usuario.h"
+	"String_.h"
+
+1763965032 source:d:\code\github\proyectofinal\clases\src\credibanco.cpp
+	<iostream >
+	"CrediBanco.h"
+	<String_.h>
+
+1763953731 source:d:\code\github\proyectofinal\clases\src\cuenta.cpp
+	"Cuenta.h"
+	<iostream>
+
+1763944212 source:d:\code\github\proyectofinal\clases\src\cuentaahorro.cpp
+	"CuentaAhorro.h"
+
+1763944061 d:\code\github\proyectofinal\clases\include\cuentaahorro.h
+	"Cuenta.h"
+
+1763944307 source:d:\code\github\proyectofinal\clases\src\cuentacredito.cpp
+	"CuentaCredito.h"
+
+1763943436 d:\code\github\proyectofinal\clases\include\cuentacredito.h
+	"Cuenta.h"
+
+1763944307 source:d:\code\github\proyectofinal\clases\src\cuentadebito.cpp
+	"CuentaDebito.h"
+
+1763944003 d:\code\github\proyectofinal\clases\include\cuentadebito.h
+	"Cuenta.h"
+
+1763942374 source:d:\code\github\proyectofinal\clases\src\transaccion.cpp
+	"Transaccion.h"
+
+1763943104 d:\code\github\proyectofinal\clases\include\transaccion.h
+	"String_.h"
+
+1763942462 source:d:\code\github\proyectofinal\clases\src\transacciondeposito.cpp
+	"TransaccionDeposito.h"
+
+1763943187 d:\code\github\proyectofinal\clases\include\transacciondeposito.h
+	"Transaccion.h"
+	"String_.h"
+	<iostream>
+
+1763942526 source:d:\code\github\proyectofinal\clases\src\transaccionprestamo.cpp
+	"TransaccionPrestamo.h"
+
+1763943245 d:\code\github\proyectofinal\clases\include\transaccionprestamo.h
+	"Transaccion.h"
+	"String_.h"
+	<iostream>
+
+1763942561 source:d:\code\github\proyectofinal\clases\src\transaccionretiro.cpp
+	"TransaccionRetiro.h"
+
+1763943281 d:\code\github\proyectofinal\clases\include\transaccionretiro.h
+	"Transaccion.h"
+	"String_.h"
+	<iostream>
+
+1763964047 source:d:\code\github\proyectofinal\clases\src\listas.cpp
+	"Listas.h"
+	<iostream>
+
+1763964010 d:\code\github\proyectofinal\clases\include\listas.h
+	"Cuenta.h"
+	"Usuario.h"
+	"Transaccion.h"
 

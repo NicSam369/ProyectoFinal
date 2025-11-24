@@ -2,12 +2,13 @@
 #include "Usuario.h"
 #include "Cuenta.h"
 #include "GestorDeArchivos.h"
-
+#include "CrediBanco.h"
+#include "UsuarioNormal.h"
 using namespace std;
 
 int main()
 {
-///**
+    /**
     char arr[]="vivian";
     char arr1[]="fnfnfn";
     char arr2[]="fjhfjf@fff.com";
@@ -27,9 +28,26 @@ int main()
     GestorDeArchivos gest1;
     gest1.AgregarUsuario(num1);
     gest1.printUsuarios();
+    */
+    Usuario* num1 = new UsuarioNormal("12345678", "Vivian", "djdjfjfji", "fjfjfj@fcnjcn.com");
+    num1->print(); //es un puntero
+    String_ numeroBanco = "123222";
+    String_ tipo="1";
+
+    Credibanco CB;
+    CB.caratula();
+    CB.agregarUsuario(num1);
+    CB.mostrarUsuarios();
 
 
 /**
+    String_ numeroBanco = "123222";
+    String_ tipo="22";
+
+    Credibanco CB(numeroBanco, 34.56,tipo);
+    CB.caratula();
+
+
     //cout << num1.getName();
     //cout<<endl;
     //cout << num1.getDNI();
@@ -49,5 +67,10 @@ int main()
     cout << endl;
     cout << S.str_;
 //*/
+/**cout << "GESTOR DE ARCHIVOS: " <<endl;
+    GestorDeArchivos gest1;
+    gest1.AgregarUsuario(num1);
+    gest1.printUsuarios();
+    */
     return 0;
 }
