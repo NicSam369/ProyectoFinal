@@ -12,25 +12,11 @@ class TransaccionRetiro: public Transaccion {
     public:
         TransaccionRetiro();
         TransaccionRetiro(int tipo, double monto, int idUsuario, char numCuenta[20], String_ tipoRetiro)
-            : Transaccion(tipo, monto, idUsuario, numCuenta)
-        {
-            this->tipoRetiro = tipoRetiro;
-        }
 
-        String_ gettipoRetiro(){
-            return tipoRetiro;
-        }
-
-        void settipoRetiro(String_ tipoRetiro){
-            this->tipoRetiro = tipoRetiro;
-        }
-
-        void mostrarRetiro(){
-            mostrarTransaccion();
-            cout << "Retiro: " << tipoRetiro.str_ << endl;
-        }
+        void mostrar() const override;
 
         ~TransaccionRetiro();
 };
 #endif
+
 
