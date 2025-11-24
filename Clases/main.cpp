@@ -4,6 +4,7 @@
 #include "GestorDeArchivos.h"
 #include "CrediBanco.h"
 #include "UsuarioNormal.h"
+#include "Transaccion.h"
 using namespace std;
 
 int main()
@@ -74,3 +75,4 @@ int main()
     */
     return 0;
 }
+
