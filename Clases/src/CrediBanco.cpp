@@ -9,11 +9,11 @@ Credibanco::Credibanco(){//String_ numero){
 }
 
 void Credibanco:: caratula() {
-    cout<<"     //*******************************************************************************************************//"<<endl;
+    cout<<"//*******************************************************************************************************//"<<endl;
     cout<<"                        Bienvenido a CrediBanco "<<endl;
-    cout <<"    Su banco de confianza "<<endl;
-    cout<< "    Aqui podra tener sus cuentas dependiendo de sus necesidades "<<endl;
-    cout<< "    En nuestro banco usted tendra seguridad y planes de interes a largo plazo"<<endl ;
+    cout <<"Su banco de confianza "<<endl;
+    cout<< "Aqui podra tener sus cuentas dependiendo de sus necesidades "<<endl;
+    cout<< "En nuestro banco usted tendra seguridad y planes de interes a largo plazo"<<endl ;
     /**
     char tmp;
     cout<< "    Para crear su cuenta primero ingresara que tipo de tarjeta quiere "<<endl ;

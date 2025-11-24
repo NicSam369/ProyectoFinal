@@ -11,7 +11,7 @@ protected:
     String_ depositante;
 
 public:
-    TransaccionDeposito(); 
+    TransaccionDeposito();
 
     TransaccionDeposito(int tipo, double monto, int idUsuario,
                         const char numCuenta[20],
@@ -22,8 +22,7 @@ public:
         this->depositante = depositante;
     }
 
-    virtual void mostrar() const override {
-        Transaccion::mostrar();
+     void mostrar() const override {
         cout << "Tipo de deposito: "; tipoDeposito.print();
         cout << "Depositante: "; depositante.print();
         cout << endl;

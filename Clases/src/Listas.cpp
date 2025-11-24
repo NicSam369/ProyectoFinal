@@ -28,21 +28,21 @@ void Listas::AgregarUsuario(Usuario* o){
 
 
 void Listas::printUsuarios() const {
-    std::cout << "=== Usuarios Premium ===" << std::endl;
+    std::cout << "Usuarios Premium" << std::endl;
     for(int i = 0; i < espacioU; i++){
         if(GuardarUsuarios[i]->getTipo() == 2){
             GuardarUsuarios[i]->print();
         }
     }
 
-    std::cout << "=== Usuarios Preferenciales ===" << std::endl;
+    std::cout << "Usuarios Preferenciales" << std::endl;
     for(int i = 0; i < espacioU; i++){
         if(GuardarUsuarios[i]->getTipo() == 3){
             GuardarUsuarios[i]->print();
         }
     }
 
-    std::cout << "=== Usuarios Normales ===" << std::endl;
+    std::cout << "Usuarios Normales" << std::endl;
     for(int i = 0; i < espacioU; i++){
         if(GuardarUsuarios[i]->getTipo() == 1){
             GuardarUsuarios[i]->print();
