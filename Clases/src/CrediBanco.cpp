@@ -41,7 +41,10 @@ void Credibanco::agregarUsuario(Usuario* u) {
 void Credibanco::mostrarUsuarios() const {
     Lista.printUsuarios();
 }
-
+void mostrar_credito_banco()const {
+    return credito_banco;
+    
+}
 String_ Credibanco::obtenerNumeroCuenta() const {
     return numeroCuenta;
 }
@@ -49,5 +52,6 @@ Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
