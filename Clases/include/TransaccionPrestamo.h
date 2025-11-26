@@ -29,7 +29,7 @@ public:
 
     virtual void mostrar() const override {
         Transaccion::mostrar();
-        cout << "Tipo prestamo: "; tipoPrestamo.print();
+        cout << "Prestamo: "; tipoPrestamo.print();
         cout << "\nPlazo: " << plazoMeses
              << "\nTasa interes: " << tasaInteres
              << "\nCuota mensual: " << cuotaMensual << endl;
@@ -39,5 +39,6 @@ public:
 };
 
 #endif
+
 
 
