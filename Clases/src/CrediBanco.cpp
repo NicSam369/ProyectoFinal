@@ -17,20 +17,20 @@ void Credibanco:: caratula() {
     /**
     
     cout<< "    Tambien tendra acceso a distinas tarjetas dependiendo su preferencia segun sus necesidades "<<endl ;
-    cout<< "           A=debito ";
-    cout<< "           B=credito ";
-    cout<< "           C=cuenta de ahorro ";
+    cout<< "           Debito "<<endl;
+    cout<< "           Credito "<<endl;
+    cout<< "           Cuenta de ahorro "<<endl;
     
     cout <<"    Podra hacer transacciones de tres tipos "<< endl ;
-    cout<< "           Deposito  ";
-    cout<< "           Retiro ";
-    cout<< "           Prestamo ";
+    cout<< "           Deposito  "<<endl;
+    cout<< "           Retiro "<<endl;
+    cout<< "           Prestamo "<<endl;
     
     cout<< "    Como siguiente paso vamos a pedirle sus datos para guardarlos en el sistema y asi asignarle su grupo de cuenta "<< endl ;
     cout<< "    Aparte se le dara ciertos beneficios en caso de ser parte de ser usuario  "<< endl ;
-    cout<< "           Normal  ";
-    cout<< "           Premiun  ";
-    cout<< "           Preferencial  ";
+    cout<< "           Normal  "<<endl;
+    cout<< "           Premiun  "<<endl;
+    cout<< "           Preferencial  "<<endl;
 
 */
 }
@@ -45,6 +45,7 @@ Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
 
