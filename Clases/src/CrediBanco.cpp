@@ -15,43 +15,37 @@ void Credibanco:: caratula() {
     cout<< "Aqui podra tener sus cuentas dependiendo de sus necesidades "<<endl;
     cout<< "En nuestro banco usted tendra seguridad y planes de interes a largo plazo"<<endl ;
     /**
-    char tmp;
-    cout<< "    Para crear su cuenta primero ingresara que tipo de tarjeta quiere "<<endl ;
+    
+    cout<< "    Tambien tendra acceso a distinas tarjetas dependiendo su preferencia segun sus necesidades "<<endl ;
     cout<< "           A=debito ";
     cout<< "           B=credito ";
     cout<< "           C=cuenta de ahorro ";
-    cin >>tmp ;
-    tipo = String_ (tmp);
-    if (tipo =="a"  ||  tipo=="A"){ //||  tmp =="debito"
-        cout <<"felicidades usted acaba de recibir una tarjeta de debito "<<endl ;
-    }else if (tipo =="b"  ||  tipo =="B"){ //||  tmp =="credito"
-        cout <<"felicidades usted acaba de recibir una tarjeta de credito "<<endl ;
-    }else if (tipo =="c"  ||  tipo =="C"){ //||  tmp =="cuenta de ahorro"
-        cout <<"felicidades usted acaba de recibir una tarjeta de cuenta de ahorro "<<endl ;
-    }
+    
+    cout <<"    Podra hacer transacciones de tres tipos "<< endl ;
+    cout<< "           Deposito  ";
+    cout<< "           Retiro ";
+    cout<< "           Prestamo ";
+    
     cout<< "    Como siguiente paso vamos a pedirle sus datos para guardarlos en el sistema y asi asignarle su grupo de cuenta "<< endl ;
-    cout<< "    Aparte se le dara ciertos beneficios en caso de ser parte de ser usuario premiun o preferencial "<< endl ;
+    cout<< "    Aparte se le dara ciertos beneficios en caso de ser parte de ser usuario  "<< endl ;
+    cout<< "           Normal  ";
+    cout<< "           Premiun  ";
+    cout<< "           Preferencial  ";
 
 */
 }
-void Credibanco::agregarUsuario(Usuario* u) {
-    Lista.AgregarUsuario(u);
-}
 
-void Credibanco::mostrarUsuarios() const {
-    Lista.printUsuarios();
-}
-void mostrar_credito_banco()const {
+
+void mostrar_credito_banco() {
     return credito_banco;
     
 }
-String_ Credibanco::obtenerNumeroCuenta() const {
-    return numeroCuenta;
-}
+
 Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
 
