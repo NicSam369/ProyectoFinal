@@ -47,11 +47,12 @@ int main()
     Credibanco CB;
     CB.caratula();
     cout << endl;
+    /**
     CB.agregarUsuario(num1);
     CB.agregarUsuario(num2);
     CB.agregarUsuario(num3);
     CB.mostrarUsuarios();
-
+    **/
 /**
     char numCuenta[20] = "00011122233";
 
@@ -63,7 +64,7 @@ int main()
     cout << " RETIRO " << endl;
     ret.mostrar();
 
-*/
+**/
 /**
     String_ numeroBanco = "123222";
     String_ tipo="22";
@@ -98,5 +99,6 @@ int main()
     */
     return 0;
 }
+
 
 
