@@ -14,7 +14,7 @@ protected:
 public:
     Credibanco();
     void agregarUsuario(Usuario* u);
-    void mostrar_credito_banco() const;
+    void mostrar_credito_banco() ;
     void mostrarUsuarios() const;
     String_ obtenerNumeroCuenta() const;
 
@@ -26,6 +26,7 @@ public:
 };
 
 #endif
+
 
 
 
