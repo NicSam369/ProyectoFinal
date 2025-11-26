@@ -23,7 +23,7 @@ public:
     }
 
      void mostrar() const override {
-        cout << "Tipo de deposito: "; tipoDeposito.print();
+        cout << "Deposito: "; tipoDeposito.print();
         cout << "Depositante: "; depositante.print();
         cout << endl;
     }
@@ -32,6 +32,7 @@ public:
 };
 
 #endif
+
 
 
 
