@@ -4,8 +4,8 @@
 using namespace std;
 
 
-Credibanco::Credibanco(){//String_ numero){
-    //numeroCuenta=numero;
+Credibanco::Credibanco(){
+    credito_banco=0;
 }
 
 void Credibanco:: caratula() {
@@ -45,6 +45,7 @@ Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
 
