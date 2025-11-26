@@ -8,14 +8,13 @@
 class Credibanco {
 
 protected:
-    String_ numeroCuenta;
+    
     double credito_banco;
     Listas Lista;
 public:
     Credibanco();
-    void agregarUsuario(Usuario* u);
+    
     void mostrar_credito_banco() ;
-    void mostrarUsuarios() const;
     String_ obtenerNumeroCuenta() const;
 
 
@@ -26,6 +25,7 @@ public:
 };
 
 #endif
+
 
 
 
