@@ -22,7 +22,7 @@ public:
 
     virtual void mostrar() const override {
         Transaccion::mostrar();
-        cout << "Tipo de retiro: "; tipoRetiro.print();
+        cout << "Retiro: "; tipoRetiro.print();
         cout << endl;
     }
 
@@ -30,5 +30,6 @@ public:
 };
 
 #endif
+
 
 
