@@ -14,7 +14,7 @@ void Credibanco:: caratula() {
     cout <<"Su banco de confianza "<<endl;
     cout<< "Aqui podra tener sus cuentas dependiendo de sus necesidades "<<endl;
     cout<< "En nuestro banco usted tendra seguridad y planes de interes a largo plazo"<<endl ;
-    /**
+    
 
     cout<< "    Tambien tendra acceso a distinas tarjetas dependiendo su preferencia segun sus necesidades "<<endl ;
     cout<< "           Debito "<<endl;
@@ -29,10 +29,11 @@ void Credibanco:: caratula() {
     cout<< "    Como siguiente paso vamos a pedirle sus datos para guardarlos en el sistema y asi asignarle su grupo de cuenta "<< endl ;
     cout<< "    Aparte se le dara ciertos beneficios en caso de ser parte de ser usuario  "<< endl ;
     cout<< "           Normal  "<<endl;
+    cout<< "           Medio  "<<endl;
     cout<< "           Premiun  "<<endl;
     cout<< "           Preferencial  "<<endl;
 
-*/
+
 }
 
 
@@ -51,6 +52,7 @@ Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
 
