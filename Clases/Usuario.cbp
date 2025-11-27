@@ -47,6 +47,7 @@
 		<Unit filename="include/TransaccionPrestamo.h" />
 		<Unit filename="include/TransaccionRetiro.h" />
 		<Unit filename="include/Usuario.h" />
+		<Unit filename="include/UsuarioMedio.h" />
 		<Unit filename="include/UsuarioNormal.h" />
 		<Unit filename="include/UsuarioPreferencial.h" />
 		<Unit filename="include/UsuarioPremium.h" />
@@ -64,6 +65,7 @@
 		<Unit filename="src/TransaccionPrestamo.cpp" />
 		<Unit filename="src/TransaccionRetiro.cpp" />
 		<Unit filename="src/Usuario.cpp" />
+		<Unit filename="src/UsuarioMedio.cpp" />
 		<Unit filename="src/UsuarioNormal.cpp" />
 		<Unit filename="src/UsuarioPreferencial.cpp" />
 		<Unit filename="src/UsuarioPremium.cpp" />

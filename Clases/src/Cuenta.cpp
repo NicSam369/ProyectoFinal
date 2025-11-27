@@ -1,4 +1,5 @@
 #include "Cuenta.h"
+#include "Usuario.h"
 #include <iostream>
 
 Cuenta::Cuenta()
@@ -64,6 +65,14 @@ void Cuenta::setType(int type){
         tipo=3;
     }
 
+}
+
+int Cuenta::getType(){
+    return tipo;
+}
+
+void Cuenta::setSaldo(int saldoinicial){
+    saldo=saldoinicial;
 }
 
 double Cuenta::getSaldo()

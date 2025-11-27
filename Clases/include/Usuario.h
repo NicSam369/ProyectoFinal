@@ -1,6 +1,7 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 #include "String_.h"
+
 //recordatorio de poner const
 
 class Usuario
@@ -15,7 +16,7 @@ class Usuario
         char* getName()const;
         char* getDNI() ;
         char* getpasword() const;
-        int getTipo();
+        int getTipo() const;
         char* getCorreo() const;
         int GetNumeroCuentas();
 
@@ -30,16 +31,19 @@ class Usuario
         void CambiarPasword(char NuevoPasword[]);
         void CambiarCorreo(char NuevoCorreo[]);
         bool VerificarPasword(String_ nuevopasword);
-        ~Usuario();
+        virtual ~Usuario();
 
     protected:
         char DNI[9];
         String_ nombre;
         int id;
         String_ pasword;
-        int tipo;
+        int tipoUsuario;
         String_ correo;
         int NumeroCuentas;
+        double CreditoInicial;
+
+
 };
 
 #endif // USUARIO_H

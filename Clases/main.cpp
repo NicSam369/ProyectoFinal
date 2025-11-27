@@ -8,7 +8,7 @@
 #include "TransaccionDeposito.h"
 #include "TransaccionPrestamo.h"
 #include "TransaccionRetiro.h"
-#include "UsuarioPreferencial.h"
+#include "UsuarioMedio.h"
 #include "UsuarioPremium.h"
 
 using namespace std;
@@ -39,7 +39,7 @@ int main()
 
     Usuario* num1 = new UsuarioNormal("12345678", "Vivian", "djdjfjfji", "fjfjfj@fcnjcn.com");
     Usuario* num2 = new UsuarioPremium("23456789", "Lilian", "vjnfjvnfj", "kgkkkv@ffff.com");
-    Usuario* num3 = new UsuarioPreferencial("34567890", "Mimian", "ieieied", "oeoe@jfjgvj.com");
+    Usuario* num3 = new UsuarioMedio("34567890", "Mimian", "ieieied", "oeoe@jfjgvj.com");
     //num1->print(); //es un puntero
     //String_ numeroBanco = "123222";
     //String_ tipo="1";
@@ -47,12 +47,12 @@ int main()
     Credibanco CB;
     CB.caratula();
     cout << endl;
-    /**
-    CB.agregarUsuario(num1);
-    CB.agregarUsuario(num2);
-    CB.agregarUsuario(num3);
-    CB.mostrarUsuarios();
-    **/
+
+    CB.AgregarUsuario(num1);
+    CB.AgregarUsuario(num2);
+    CB.AgregarUsuario(num3);
+    CB.MostrarUsuarios();
+
 /**
     char numCuenta[20] = "00011122233";
 

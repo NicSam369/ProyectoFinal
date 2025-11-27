@@ -1,3 +1,4 @@
+#include "Cuenta.h"
 #include "Usuario.h"
 #include <iostream>
 
@@ -35,7 +36,7 @@ void Usuario::print()
     std::cout << "pasword: ";
     pasword.print();
     //std::cout << std::endl;
-    std::cout << "tipo: " << tipo << std::endl;
+    std::cout << "tipo: " << tipoUsuario << std::endl;
     std::cout << std::endl;
 }
 
@@ -58,8 +59,8 @@ char* Usuario::getpasword() const{
     return pasword.str_;
 }
 
-int Usuario::getTipo(){
-    return tipo;
+int Usuario::getTipo() const{
+    return tipoUsuario;
 }
 
 char* Usuario::getCorreo() const{
@@ -107,11 +108,11 @@ void Usuario::setid(int inid){
 
 void Usuario:: setType(int type){
     if(type==0){
-        tipo=1;
+        tipoUsuario=1;
     } else if (type==1){
-        tipo=2;
+        tipoUsuario=2;
     } else {
-        tipo=3;
+        tipoUsuario=3;
     }
 }
 

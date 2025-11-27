@@ -8,21 +8,25 @@ class Listas
 {
      public:
         Listas();
-        void AgregarCuentas(Cuenta o);
+        void AgregarCuentas(Cuenta* o);
+        void printCuentas() const;
         void AgregarUsuario(Usuario* o);
         void printUsuarios() const;
-        void AgregarTransaccion(Transaccion o);
-        void infoUusario(int num);
-        void infoCuenta(int num);
-        void infoTransaccion(int num);
+        void AgregarTransaccion(Transaccion* o);
+        void printTransacciones() const;
+
+        void borrarCuenta(Cuenta* o);
+        void borrarUsuario(Usuario* o);
+        void borrarTransaccion(Transaccion* o);
+
         ~Listas();
 
     protected:
-        Cuenta ** GuardarCuentas;
+        Cuenta *** GuardarCuentas;
         int espacioC;
-        Usuario **GuardarUsuarios;
+        Usuario ***GuardarUsuarios;
         int espacioU;
-        Transaccion ** Transacciones;
+        Transaccion *** GuardarTransacciones;
         int espacioT;
 
 };
