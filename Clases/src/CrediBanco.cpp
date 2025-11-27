@@ -5,7 +5,7 @@ using namespace std;
 
 
 Credibanco::Credibanco(){
-    credito_banco=0;
+    credito_banco=302994000000.86;
 }
 
 void Credibanco:: caratula() {
@@ -20,10 +20,6 @@ void Credibanco:: caratula() {
     cout << "                SISTEMA BANCARIO - CREDIBANCO\n";
     cout << "====================================================\n";
     cout << "   Proyecto Final - Base de Datos en C++\n";
-    cout << "   Integración con repositorio:\n";
-    
-    cout << "   Código base utilizado:\n";
-    
     cout << "----------------------------------------------------\n";
     cout << "   Autores: \n";
     cout << "   Almary Sharelly Choque Barreda\n";
@@ -33,7 +29,7 @@ void Credibanco:: caratula() {
     cout << "   Curso: CCOMP2-2\n";
     cout << "   Docente: Manuel Eduardo Loaiza Fernandez\n";
     cout << "   Alvaro Henry Mamani Aliaga\n";
-    cout << "   Fecha: [fecha actual]\n";
+    cout << "   Fecha: 28/11/25\n";
     cout << "====================================================\n\n";
 
     cout << "====================================================\n\n";
@@ -79,6 +75,7 @@ Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
 
