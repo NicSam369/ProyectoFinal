@@ -21,8 +21,8 @@ Transaccion::Transaccion(int tipoTrans, double montoTrans, int idUsuarioTrans, c
 }
 
 void Transaccion::mostrar() const {
-    cout << "--- Transaccion ---\n";
-    cout << "Tipo (1=Dep, 2=Ret, 3=Pres): " << tipo << endl;
+    cout << "          Transaccion          \n";
+    cout << "Tipo (1=Deposito, 2=Retiro, 3=Prestamo): " << tipo << endl;
     cout << "Monto: " << monto << endl;
     cout << "ID Usuario: " << idUsuario << endl;
     cout << "Numero de Cuenta Destino/Propia: " << numCuenta << endl;
@@ -44,3 +44,4 @@ void Transaccion::setNumCuenta(const char* numCuentaTrans) {
 
 Transaccion::~Transaccion() {
 }
+
