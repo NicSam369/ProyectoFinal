@@ -9,6 +9,27 @@ Credibanco::Credibanco(){
 }
 
 void Credibanco:: caratula() {
+    cout << "====================================================\n";
+    cout << "        ██████╗  █████╗ ███╗   ██╗██╗  ██╗ ██████╗  \n";
+    cout << "        ██╔══██╗██╔══██╗████╗  ██║██║ ██╔╝██╔═══██╗ \n";
+    cout << "        ██████╔╝███████║██╔██╗ ██║█████╔╝ ██║   ██║ \n";
+    cout << "        ██╔══██╗██╔══██║██║╚██╗██║██╔═██╗ ██║   ██║ \n";
+    cout << "        ██████╔╝██║  ██║██║ ╚████║██║  ██╗╚██████╔╝ \n";
+    cout << "        ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝  \n";
+    cout << "====================================================\n";
+    cout << "                SISTEMA BANCARIO - CREDIBANCO\n";
+    cout << "====================================================\n";
+    cout << "   Proyecto Final - Base de Datos en C++\n";
+    cout << "   Integración con repositorio:\n";
+    cout << "   https://github.com/damiancabrera123/apoyo-proyecto-final-.git\n";
+    cout << "   Código base utilizado:\n";
+    cout << "   https://github.com/NicSam369/ProyectoFinal.git\n";
+    cout << "----------------------------------------------------\n";
+    cout << "   Autor: Damián Gonzalo Cabrera Asillo\n";
+    cout << "   Curso: [tu curso]\n";
+    cout << "   Docente: [tu profesor]\n";
+    cout << "   Fecha: [fecha actual]\n";
+    cout << "====================================================\n\n";
     cout<<"//*******************************************************************************************************//"<<endl;
     cout<<"                        Bienvenido a CrediBanco "<<endl;
     cout <<"Su banco de confianza "<<endl;
@@ -52,6 +73,7 @@ Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
 
