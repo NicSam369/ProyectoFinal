@@ -1,21 +1,18 @@
 #ifndef TRANSACCIONRETIRO_H
 #define TRANSACCIONRETIRO_H
+
 #include "Transaccion.h"
 #include "String_.h"
 #include <iostream>
+using namespace std;
 
-
-class TransaccionRetiro : public Transaccion
-{
+class TransaccionRetiro : public Transaccion {
 protected:
     String_ tipoRetiro;
 
 public:
     TransaccionRetiro();
-
-    TransaccionRetiro(int tipo, double monto, int idUsuario,
-                      const char numCuenta[20],
-                      String_ tipoRetiro)
+    TransaccionRetiro(int tipo, double monto, int idUsuario, const char numCuenta[20], String_ tipoRetiro)
         : Transaccion(tipo, monto, idUsuario, numCuenta)
     {
         this->tipoRetiro = tipoRetiro;
@@ -23,7 +20,7 @@ public:
 
     virtual void mostrar() const override {
         Transaccion::mostrar();
-        cout << "Retiro: "; tipoRetiro.print();
+        cout << "Tipo Retiro: "; tipoRetiro.print();
         cout << endl;
     }
 
@@ -31,7 +28,3 @@ public:
 };
 
 #endif
-
-
-
-
