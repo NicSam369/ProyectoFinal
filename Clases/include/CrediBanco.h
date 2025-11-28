@@ -8,7 +8,7 @@
 class Credibanco {
 
     protected:
-
+        int opcion;
         double credito_banco;
         Listas Lista;
     public:
@@ -31,13 +31,21 @@ class Credibanco {
         void printUoC(int id) const;
         void printT(int id);
 
+        //agregar menu de opciones
+        void c_usuario();
+        void b_usuario();
+        void m_usuario();
 
+        int menu();
+        //incluir metodo de usuario
+        Usuario us;
         // Método virtual para extender en clases hijas
         void caratula() ;
         ~Credibanco();
 };
 
 #endif
+
 
 
 
