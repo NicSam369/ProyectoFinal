@@ -43,9 +43,10 @@ int main()
     CB.AgregarUsuario(num9);
 
     CB.MostrarUsuarios();
-
+    CB.menu();
     return 0;
 }
+
 
 
 
