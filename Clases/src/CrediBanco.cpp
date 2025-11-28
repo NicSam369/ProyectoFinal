@@ -6,6 +6,7 @@ using namespace std;
 
 Credibanco::Credibanco(){
     credito_banco=302994000000.86;
+    opcion=0;
 }
 
 void Credibanco:: caratula() {
@@ -88,6 +89,57 @@ void Credibanco::BorrarTransaccion(Transaccion *o){
     Lista.borrarTransaccion(o);
 }
 
+
+//metodos info usuarios
+void Credibanco::c_usuario(){
+
+    cout << "\n[CREAR USUARIO]\n";
+
+
+}
+void Credibanco::b_usuario(){
+    cout << "\n[BORRAR USUARIO]\n";
+
+}
+void Credibanco::m_usuario(){
+    cout << "\n[MOSTRAR USUARIOS]\n";
+
+}
+int Credibanco::menu(){
+    while (true) {
+        cout << "\n===== MENU =====\n";
+        cout << "1. Crear usuario\n";
+        cout << "2. Borrar usuario\n";
+        cout << "3. Mostrar usuarios\n";
+        cout << "4. Transaccion\n";
+        cout << "5. Salir\n";
+        cout << "Elige una opcion: ";
+
+        cin >> opcion;
+
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "Entrada invalida.\n";
+            continue;
+        }
+
+        switch (opcion) {
+            case 1: c_usuario(); break;
+            case 2: b_usuario(); break;
+            case 3: m_usuario(); break;
+            case 4:
+            case 5:
+                cout << "Saliendo...\n";
+                return 0;
+
+            default:
+                cout << "Opcion invalida.\n";
+        }
+    }
+}
+
+
 void Credibanco::printUoC(int id) const
 {
     int cual;
@@ -120,6 +172,7 @@ Credibanco::~Credibanco()
 {
     //dtor
 }
+
 
 
 
