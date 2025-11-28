@@ -14,6 +14,9 @@ class Listas
         void printUsuarios() const;
         void AgregarTransaccion(Transaccion* o);
         void printTransacciones() const;
+        void printU(int id) const;
+        void printC(int id) const;
+        void printT(int id) const;
 
         void borrarCuenta(Cuenta* o);
         void borrarUsuario(Usuario* o);

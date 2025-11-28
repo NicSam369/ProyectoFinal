@@ -15,35 +15,19 @@ using namespace std;
 
 int main()
 {
-    /**
-    char arr[]="vivian";
-    char arr1[]="fnfnfn";
-    char arr2[]="fjhfjf@fff.com";
-    char arr3[] = "djdjdjd";
-    String_ n1(arr);
-    String_ contra1(arr1);
-    String_ correo1(arr2);
-    char dni[8]={'1','2','3','4','5','6','7','8'};
-    Usuario num1(dni,n1,contra1, correo1);
-    num1.print();
-    num1.CambiarPasword(arr3);
-    num1.print();
-    //char numcuenta[20]= {'0','0','0','0','0','0','0','0','0','0',
-    //                    '0','0','0','0','0','0','0','0','0','0'};
-    //Cuenta c1(numcuenta, 43,100.60);
-    cout << "GESTOR DE ARCHIVOS: " <<endl;
-    GestorDeArchivos gest1;
-    gest1.AgregarUsuario(num1);
-    gest1.printUsuarios();
-    */
 
-    Usuario* num1 = new UsuarioNormal("12345678", "Vivian", "djdjfjfji", "fjfjfj@fcnjcn.com");
-    Usuario* num2 = new UsuarioPremium("23456789", "Lilian", "vjnfjvnfj", "kgkkkv@ffff.com");
-    Usuario* num3 = new UsuarioMedio("34567890", "Mimian", "ieieied", "oeoe@jfjgvj.com");
-    //num1->print(); //es un puntero
-    //String_ numeroBanco = "123222";
-    //String_ tipo="1";
-    cout << "c=" << endl;
+
+    Usuario* num1  = new UsuarioNormal ("78123456", "Valeria", "passV123", "valeria.gomez@mail.com", 101);
+    Usuario* num2  = new UsuarioPremium("82345912", "Luis", "LMtz45#", "luis.mtz@example.com", 102);
+    Usuario* num3  = new UsuarioMedio  ("90451283", "Sofia", "SofiH88", "sofia.herrera@correo.com", 103);
+    Usuario* num4  = new UsuarioNormal ("76451239", "Carlos", "CRiv902", "c.rivera@mail.com", 104);
+    Usuario* num5  = new UsuarioPremium("89754321", "Ana", "AnaT55", "ana.torres@example.com", 105);
+    Usuario* num6  = new UsuarioMedio  ("91567823", "Jorge", "JSal09", "jorge.salinas@mail.com", 106);
+    Usuario* num7  = new UsuarioNormal ("73194562", "Camila", "CamR09", "camila.rojas@mail.com", 107);
+    Usuario* num8  = new UsuarioPremium("85673429", "Diego", "DNav44", "diego.nav@correo.com", 108);
+    Usuario* num9  = new UsuarioPremium  ("96812345", "Lucía", "LucP33", "lucia.peralta@example.com", 109);
+
+
     Credibanco CB;
     CB.caratula();
     cout << endl;
@@ -51,52 +35,15 @@ int main()
     CB.AgregarUsuario(num1);
     CB.AgregarUsuario(num2);
     CB.AgregarUsuario(num3);
+    CB.AgregarUsuario(num4);
+    CB.AgregarUsuario(num5);
+    CB.AgregarUsuario(num6);
+    CB.AgregarUsuario(num7);
+    CB.AgregarUsuario(num8);
+    CB.AgregarUsuario(num9);
+
     CB.MostrarUsuarios();
 
-/**
-    char numCuenta[20] = "00011122233";
-
-    TransaccionDeposito dep(1, 200.0, 1, numCuenta, "Efectivo", "Vivian");
-    cout << " DEPOSITO " << endl;
-    dep.mostrar();
-
-    TransaccionRetiro ret(2, 50.0, 1, numCuenta, "Cajero Automático");
-    cout << " RETIRO " << endl;
-    ret.mostrar();
-
-**/
-/**
-    String_ numeroBanco = "123222";
-    String_ tipo="22";
-
-    Credibanco CB(numeroBanco, 34.56,tipo);
-    CB.caratula();
-
-
-    //cout << num1.getName();
-    //cout<<endl;
-    //cout << num1.getDNI();
-    //cout<<endl;
-    //cout << num1.getpasword();
-    //cout<<endl;
-    //cout<< num1.getID();
-    //cout << num1.getName();
-    //num1.print();
-    String_ s("VIVc");
-    cout<< s.str_;
-    String_ S;
-    S=s;
-    cout << endl;
-    cout << S.str_;
-    S.ChangeChar('M',0);
-    cout << endl;
-    cout << S.str_;
-//*/
-/**cout << "GESTOR DE ARCHIVOS: " <<endl;
-    GestorDeArchivos gest1;
-    gest1.AgregarUsuario(num1);
-    gest1.printUsuarios();
-    */
     return 0;
 }
 

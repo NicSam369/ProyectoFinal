@@ -5,7 +5,7 @@
 class UsuarioMedio : public Usuario
 {
     public:
-        UsuarioMedio(const char *DNIpas,String_ name, String_ contra, String_ email);
+        UsuarioMedio(const char *DNIpas,String_ name, String_ contra, String_ email, int IDu);
         ~UsuarioMedio();
 
     protected:

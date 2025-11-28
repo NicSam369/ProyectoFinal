@@ -8,7 +8,7 @@ class Usuario
 {
     public:
         Usuario();
-        Usuario(const char *DNIpas,String_ name, String_ contra, String_ email);
+        Usuario(const char *DNIpas,String_ name, String_ contra, String_ email, int IDu);
 
         void print();
 

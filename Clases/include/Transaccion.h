@@ -14,6 +14,7 @@ public:
     double getMonto() const;
     int getIdUsuario() const;
     const char* getNumCuenta() const;
+    int getID() const;
 
     void setTipo(int tipoTrans);
     void setMonto(double montoTrans);
@@ -26,6 +27,7 @@ protected:
     double monto;
     int idUsuario;
     char numCuenta[20];
+    int id;
 
 private:
     int tipo;

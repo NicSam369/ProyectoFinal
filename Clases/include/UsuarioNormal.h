@@ -5,7 +5,7 @@
 class UsuarioNormal : public Usuario
 {
     public:
-        UsuarioNormal(const char *DNIpas, String_ name, String_ contra, String_ email);
+        UsuarioNormal(const char *DNIpas, String_ name, String_ contra, String_ email, int IDu);
         //void print() override;
         ~UsuarioNormal();
 

@@ -18,10 +18,18 @@ class Credibanco {
         String_ obtenerNumeroCuenta() const;
         void AgregarUsuario(Usuario * o);
         void MostrarUsuarios();
+        void BorrarUsuario(Usuario *o);
 
-        void infoUusario(int id);
-        void infoCuenta(int id);
-        void infoTransaccion(int id);
+        void AgregarCuenta(Cuenta * o);
+        void MostrarCuentas();
+        void BorrarCuenta(Cuenta *o);
+
+        void AgregarTransaccion(Transaccion * o);
+        void MostrarTransaccion();
+        void BorrarTransaccion(Transaccion *o);
+
+        void printUoC(int id) const;
+        void printT(int id);
 
 
         // Método virtual para extender en clases hijas

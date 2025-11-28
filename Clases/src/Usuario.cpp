@@ -11,13 +11,13 @@ Usuario::Usuario()
     id =0;
 }
 
-Usuario::Usuario(const char *DNIpas, String_ name, String_ contra, String_ email)
+Usuario::Usuario(const char *DNIpas, String_ name, String_ contra, String_ email, int IDu)
 {
     for(int i=0; i<8; i++){
         DNI[i]=DNIpas[i];
     }
     DNI[8]='\0';
-    id =0;
+    id =IDu;
     nombre= name;
     pasword= contra;
     correo=email;
@@ -30,12 +30,10 @@ void Usuario::print()
     std::cout<< "Informacion del Usuario:" << std::endl;
     std::cout << "Nombre: ";
     nombre.print();
-    //std::cout << std::endl;
     std::cout << "DNI: " << DNI << std::endl;
     std::cout << "ID: " << id << std::endl;
     std::cout << "pasword: ";
     pasword.print();
-    //std::cout << std::endl;
     std::cout << "tipo: " << tipoUsuario << std::endl;
     std::cout << std::endl;
 }

@@ -71,6 +71,11 @@ int Cuenta::getType(){
     return tipo;
 }
 
+int Cuenta::getID() const
+{
+    return id;
+}
+
 void Cuenta::setSaldo(int saldoinicial){
     saldo=saldoinicial;
 }

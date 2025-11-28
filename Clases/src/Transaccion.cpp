@@ -32,6 +32,7 @@ int Transaccion::getTipo() const { return tipo; }
 double Transaccion::getMonto() const { return monto; }
 int Transaccion::getIdUsuario() const { return idUsuario; }
 const char* Transaccion::getNumCuenta() const { return numCuenta; }
+int Transaccion::getID () const { return id;}
 
 void Transaccion::setTipo(int tipoTrans) { tipo = tipoTrans; }
 void Transaccion::setMonto(double montoTrans) { monto = montoTrans; }

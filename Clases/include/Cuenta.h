@@ -13,6 +13,7 @@ class Cuenta
 		 virtual void mostrarDatos() const;
 		 double getSaldo();
 		 int getType();
+		 int getID() const;
 		 void setSaldo(int saldoinicial);
 		 void setType(int type);
 

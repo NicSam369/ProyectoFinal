@@ -37,7 +37,7 @@ void Credibanco:: caratula() {
     cout <<"Su banco de confianza \n";;
     cout<< "Aqui podra tener sus cuentas dependiendo de sus necesidades "<<endl;
     cout<< "En nuestro banco usted tendra seguridad y planes de interes a largo plazo"<<endl ;
-    
+
 
     cout<< "    Tambien tendra acceso a distinas tarjetas dependiendo su preferencia segun sus necesidades "<<endl ;
     cout<< "           Debito "<<endl;
@@ -71,6 +71,58 @@ void Credibanco::AgregarUsuario(Usuario * o){
 void Credibanco::MostrarUsuarios(){
     Lista.printUsuarios();
 }
+void Credibanco::BorrarUsuario(Usuario *o){
+    Lista.borrarUsuario(o);
+}
+
+void Credibanco::AgregarCuenta(Cuenta * o){
+    Lista.AgregarCuentas(o);
+}
+void Credibanco::MostrarCuentas(){
+    Lista.printCuentas();
+}
+void Credibanco::BorrarCuenta(Cuenta *o){
+    Lista.borrarCuenta(o);
+}
+
+void Credibanco::AgregarTransaccion(Transaccion * o){
+    Lista.AgregarTransaccion(o);
+}
+void Credibanco::MostrarTransaccion(){
+    Lista.printTransacciones();
+}
+void Credibanco::BorrarTransaccion(Transaccion *o){
+    Lista.borrarTransaccion(o);
+}
+
+void Credibanco::printUoC(int id) const
+{
+    int cual;
+    cout << "Quieres tu cuenta o tu usuario?: " << endl;
+    cout << "1=usuario " << endl;
+    cout << "2=cuenta " << endl;
+    cout << "Escoge uno : " << endl;
+
+    cin>>cual;
+
+    if(cual==1){
+        cout << "Usuario"<< endl;
+         Lista.printU(id);
+         cout << endl;
+    } else if(cual==2){
+        cout << "Cuenta"<< endl;
+         Lista.printC(id);
+         cout << endl;
+    } else {
+        cout << "No escogiste una opcion valida"<< endl;
+    }
+}
+
+void Credibanco::printT(int id)  {
+    cout << "Transacciones" << endl;
+    Lista.printT(id);
+}
+
 Credibanco::~Credibanco()
 {
     //dtor

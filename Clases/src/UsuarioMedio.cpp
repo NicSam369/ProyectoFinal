@@ -1,11 +1,8 @@
 #include "UsuarioMedio.h"
 
-UsuarioMedio::UsuarioMedio(const char *DNIpas,String_ name, String_ contra, String_ email)
+UsuarioMedio::UsuarioMedio(const char *DNIpas,String_ name, String_ contra, String_ email, int IDu)
+    :Usuario(DNIpas, name,contra,email,IDu)
 {
-    setDNI(DNIpas);
-    setnombre(name);
-    setPasword(contra);
-    setCorreo(email);
     setType(1);
 }
 
